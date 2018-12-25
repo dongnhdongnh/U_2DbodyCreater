@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/2D Ragdoll Creator/Ragdoll Test.unity
+  isLoaded: 1
+  isActive: 1
