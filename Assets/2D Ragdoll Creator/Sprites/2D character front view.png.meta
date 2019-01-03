@@ -1,32 +1,55 @@
 fileFormatVersion: 2
 guid: 0228f5f3c1a99e246ba869cfd1ad3152
 TextureImporter:
-  serializedVersion: 2
+  fileIDToRecycleName:
+    21300000: upper arm 1
+    21300002: head
+    21300004: upper arm 2
+    21300006: lower arm 1
+    21300008: neck
+    21300010: wrist 1
+    21300012: thigh 2
+    21300014: body
+    21300016: thigh 1
+    21300018: wrist 2
+    21300020: leg 2
+    21300022: leg 1
+    21300024: lower arm 2
+  externalObjects: {}
+  serializedVersion: 7
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: 1
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -34,18 +57,47 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings:
-  - buildTarget: iPhone
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 1024
-    textureFormat: -2
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 2
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: upper arm 1
+    - serializedVersion: 2
+      name: upper arm 1
       rect:
         serializedVersion: 2
         x: 120
@@ -53,8 +105,19 @@ TextureImporter:
         width: 76
         height: 62
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: head
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e5fef3084985d4fa073f63095225b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head
       rect:
         serializedVersion: 2
         x: 204
@@ -62,8 +125,19 @@ TextureImporter:
         width: 76
         height: 108
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: upper arm 2
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810185b8cdf59fb408350bdc7454ec18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upper arm 2
       rect:
         serializedVersion: 2
         x: 291
@@ -71,8 +145,19 @@ TextureImporter:
         width: 73
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: lower arm 1
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf195a0a28e32344969d0d656b208aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lower arm 1
       rect:
         serializedVersion: 2
         x: 47
@@ -80,8 +165,19 @@ TextureImporter:
         width: 73
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: neck
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 715955179535b5544939ddc259b23b35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neck
       rect:
         serializedVersion: 2
         x: 232
@@ -89,8 +185,19 @@ TextureImporter:
         width: 21
         height: 59
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: wrist 1
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f5ce2bf79281644ad163a7fde788a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrist 1
       rect:
         serializedVersion: 2
         x: 4
@@ -98,8 +205,19 @@ TextureImporter:
         width: 40
         height: 40
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: thigh 2
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b3a787dcf5f0f04e80d0d240301fd0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thigh 2
       rect:
         serializedVersion: 2
         x: 114
@@ -107,8 +225,19 @@ TextureImporter:
         width: 27
         height: 158
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: body
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f73348c71f5b5264ba40643e34cf3c62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: body
       rect:
         serializedVersion: 2
         x: 192
@@ -116,8 +245,19 @@ TextureImporter:
         width: 100
         height: 181
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: thigh 1
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c5adaccde3f1345b4143d8c9a04648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thigh 1
       rect:
         serializedVersion: 2
         x: 344
@@ -125,8 +265,19 @@ TextureImporter:
         width: 28
         height: 158
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: wrist 2
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aaadbf1d4807ec46aee0593f637b2a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrist 2
       rect:
         serializedVersion: 2
         x: 436
@@ -134,8 +285,19 @@ TextureImporter:
         width: 38
         height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: leg 2
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8690afd4d2e3445b1b467d9d9c98a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leg 2
       rect:
         serializedVersion: 2
         x: 107
@@ -143,8 +305,19 @@ TextureImporter:
         width: 41
         height: 125
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: leg 1
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7394c7d82ea3ce4480a151c27b66712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leg 1
       rect:
         serializedVersion: 2
         x: 336
@@ -152,8 +325,19 @@ TextureImporter:
         width: 44
         height: 130
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: lower arm 2
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63d1a9d6fa36794eb5f96fdad008fe3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lower arm 2
       rect:
         serializedVersion: 2
         x: 361
@@ -161,6 +345,28 @@ TextureImporter:
         width: 68
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4758c87b2594dfa49834bcf23ba0d2de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
