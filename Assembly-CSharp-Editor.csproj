@@ -62,7 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\2D Ragdoll Creator\Editor\2D_Ragdoll_Creator.cs" />
+    <Compile Include="Assets\Demigiant\DOTweenPro\Editor\DOTweenAnimationInspector.cs" />
     <Compile Include="Assets\Scripts\DongNH\Editor\PoseMakerEditor.cs" />
+    <None Include="Assets\Demigiant\DemiLib\Core\Editor\DemiEditor.xml" />
     <Reference Include="Assembly-UnityScript">
       <HintPath>F:/Work/UnityProjects/U_2DbodyCreater/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
     </Reference>
@@ -341,6 +343,33 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenEditor">
+      <HintPath>F:/Work/UnityProjects/U_2DbodyCreater/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46">
+      <HintPath>F:/Work/UnityProjects/U_2DbodyCreater/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenProEditor">
+      <HintPath>F:/Work/UnityProjects/U_2DbodyCreater/Assets/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>F:/Work/UnityProjects/U_2DbodyCreater/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiLib">
+      <HintPath>F:/Work/UnityProjects/U_2DbodyCreater/Assets/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiEditor">
+      <HintPath>F:/Work/UnityProjects/U_2DbodyCreater/Assets/Demigiant/DemiLib/Core/Editor/DemiEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>F:/Work/UnityProjects/U_2DbodyCreater/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>F:/Work/UnityProjects/U_2DbodyCreater/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>F:/Work/UnityProjects/U_2DbodyCreater/Assets/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>F:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>

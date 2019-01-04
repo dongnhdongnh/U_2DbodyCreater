@@ -1,16 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class PoseMaker : MonoBehaviour
 {
-    public string poseName;
+
+    public PoseState poseState;
+    public bool enableSave = false;
     public bool autoF5 = false;
     public Transform[] poseTransfroms;
     // Use this for initialization
     void Start()
     {
-
+        MaKeStatic(true);
     }
 
     // Update is called once per frame
@@ -18,7 +20,7 @@ public class PoseMaker : MonoBehaviour
     {
         if (autoF5)
         {
-            LoadPose();
+            LoadPose(this.poseState.ToString());
         }
     }
     string PoseName(string name)
@@ -26,15 +28,17 @@ public class PoseMaker : MonoBehaviour
         return "pose" + name;
     }
     public Rigidbody2D[] poseStatic;
-    public void MaKeStatic()
+    public void MaKeStatic(bool isStatic)
     {
         foreach (var pose in poseStatic)
         {
-            pose.isKinematic = !pose.isKinematic;
+            //  pose.simulated = isStatic;
+            pose.isKinematic = isStatic;
         }
     }
     public void SavePose()
     {
+        if (!enableSave) return;
         Debug.Log("SHOW");
         PoseDataSave data = new PoseDataSave();
         foreach (Transform t in poseTransfroms)
@@ -46,13 +50,14 @@ public class PoseMaker : MonoBehaviour
             data.datas.Add(_data);
         }
         string _file = JsonUtility.ToJson(data);
-        PlayerPrefs.SetString(PoseName(poseName), _file);
+        PlayerPrefs.SetString(PoseName(poseState.ToString()), _file);
         Debug.Log(_file);
     }
 
 
-    public void LoadPose()
+    public void LoadPose(string poseName)
     {
+        MaKeStatic(true);
         if (!PlayerPrefs.HasKey(PoseName(poseName))) return;
         string data = PlayerPrefs.GetString(PoseName(poseName));
         PoseDataSave poseData = JsonUtility.FromJson<PoseDataSave>(data);
@@ -66,6 +71,20 @@ public class PoseMaker : MonoBehaviour
         }
 
     }
+
+    //public void SmoothChangePose()
+    //{
+    //    foreach ()
+    //    { }
+    //}
+}
+
+public enum PoseState
+{
+    STAND,
+    READY,
+    JUMP
+
 }
 
 [System.Serializable]
@@ -85,9 +104,12 @@ public class PoseData
     public bool LoadPose(Transform t)
     {
         if (!t.name.Equals(poseName)) return false;
-        t.localPosition = posePosition;
-        t.localRotation = poseRotation;
+        t.DOLocalMove(posePosition, 0.5f);
+        t.DOLocalRotateQuaternion(poseRotation, 0.5f);
+        //t.localPosition = posePosition;
+        //t.localRotation = poseRotation;
         return true;
-
     }
+
+
 }

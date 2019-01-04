@@ -18,11 +18,11 @@ public class PoseMakerEditor : Editor
         }
         if (GUILayout.Button("LOAD"))
         {
-            myScript.LoadPose();
+            myScript.LoadPose(myScript.poseState.ToString());
         }
         if (GUILayout.Button("pose"))
         {
-            myScript.MaKeStatic();
+            myScript.MaKeStatic(true);
         }
     }
     // Use this for initialization
